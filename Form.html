@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-zm">
+<meta name="viewpoint" width="device-width, initial-scale=1.0">
+<head>
+<title>Comments</title>
+<link rel="stylesheet" href="sasss/css/style.css">
+<script src="Js/thisscript.js"></script>
+<head>     
+
+<body>
+<p>
+<div class="c3"><form onsubmit="fallBack()">
+Comments:<br>
+    <textarea name="complaint"> </textarea><br>
+<br><br>
+Fullname: <input type='text' max-length='32' size="50" height="29"><br><br>
+Receipt No.: 
+<input type="number" size="10px" min=1000 max=100000><br><br>
+How would you rate your satisfaction? 
+<input id="rate" type ="range" min=1 max=5 name=rate value=3 size=22 height="17px" width="22px" step=1 onchange="update()">
+<span id="rate_val">
+    3
+</span>
+<br>
+<strong>
+    1: Least satisfied<br><br>
+    3: Average satisfaction<br>
+    5: Fully satisfied<br><br>
+</strong>
+<input class="c2" type='submit' value='Submit'> &nbsp;&nbsp;<input class="c2" type="reset" value="Reset">
+</form>
+</div>
+</p>
+</body>
