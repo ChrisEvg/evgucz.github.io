@@ -1,0 +1,272 @@
+<head>
+  <style>
+    @media (min-width: 1025px) {
+.h-custom {
+height: 100vh !important;
+}
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+
+.gradient-custom-2 {
+/* fallback for old browsers */
+background: #a1c4fd;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+}
+
+.bg-indigo {
+background-color: #4835d4;
+}
+@media (min-width: 992px) {
+.card-registration-2 .bg-indigo {
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+}
+@media (max-width: 991px) {
+.card-registration-2 .bg-indigo {
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+}
+</style>
+</head>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+ 
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<body>
+<section class="h-100 h-custom gradient-custom-2">
+  <div class="container py-5 h-100"><h3 class="text-center">Membership Registration</h3>
+    <div class="row d-flex justify-content-center align-items-center h-100">
+  <form class="form-control" action="<?=base_url('admin/create')?>" method="post">  
+    <div class="col-12">
+        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+          <div class="card-body p-0">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h3>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="date" id="form3Examplev2" class="form-control form-control-lg" name="NAME" required />
+                        <label class="form-label" for="form3Examplev2">Full name</label>
+                      </div>
+
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Examplev3" class="form-control form-control-lg" name="Date of Birth" required />
+                        <label class="form-label" for="form3Examplev3">Date of Birth</label>
+                      </div>
+					  
+					  <div class="mb-4 pb-2">
+                    <select data-mdb-select-init name="Gender" required>
+                      <option value="M">Male</option>
+                      <option value="F">Female</option>
+                    </select>
+                  </div>
+
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Examplev3" class="form-control form-control-lg" name="National ID number" placeholder="123456/78/9" required max="11" min="11" />
+                        <label class="form-label" for="form3Examplev3">National ID number</label>
+                      </div>
+
+                    </div>
+					
+					<div class="mb-4 pb-2">
+                    <select data-mdb-select-init name="Membership Status" required>
+                      <option value="Mr">Communicant</option>
+                      <option value="Miss">Catecumen</option>
+                      <option value="Mrs">Adherent</option>
+                    </select>
+                  </div>
+
+                    <div class="col-md-6">
+                        <div class="formbold-mb-3">
+                          <label for="dob" class="formbold-form-label"> Date of Baptism </label>
+                          <input type="date" name="Baptism Date" id="dob" class="formbold-form-input" required/>
+                        </div>
+                    </div>
+					
+					<div class="col-md-6">
+                        <div class="formbold-mb-3">
+                          <label for="dob" class="formbold-form-label"> Date of Confirmation </label>
+                          <input type="date" name="Confirmation Date" id="dob" class="formbold-form-input" required/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4 pb-2">
+                    <div data-mdb-input-init class="form-outline">
+                    <select data-mdb-select-init class="form-control form-control-lg" id="form3Examplev3" name="Marital Status">
+                      <option value="">Single</option>
+                      <option value="Admin">Married</option>
+                      <option value="Supervisor">Divorced</option>
+                      <option value="Employee">Widow/Widower</option>
+                    </select>
+                    </div>
+                  </div>
+     
+                    <div class="col-md-6 row">
+                    <div data-mdb-input-init class="form-outline mb-3 mb-md-0">
+                      <input type="text" id="form3Examplev4" class="form-control form-control-lg" name="Groups Membership" required />
+                      <label class="form-label" for="form3Examplev4">Group(s) belong to </label>
+                    </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-floating mb-3 mb-md-0">
+                          <input class="form-control" id="inputNRC" type="text" placeholder="NRC Number" name="nrc" required />
+                          <label for="inputNRC">NRC Number</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-floating mb-3 mb-md-0">
+                          <input class="form-control" id="inputNRC" type="text" placeholder="Dept, Number" name="dptid" required />
+                          <label for="inputNRC">DEPT Number</label>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  
+
+                  
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Examplev5" class="form-control form-control-lg" name="eId" required />
+                        <label class="form-label" for="form3Examplev5">Employee ID</label>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-6 bg-indigo text-white">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5">Contact Details</h3>
+
+                  <div class="mb-4 pb-2">
+                    <div data-mdb-input-init class="form-outline form-white">
+                      <input type="text" id="form3Examplea2" class="form-control form-control-lg" name="address" required />
+                      <label class="form-label" for="form3Examplea2">Street and House #</label>
+                    </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div data-mdb-input-init class="form-outline form-white">
+                      <input type="text" id="form3Examplea3" class="form-control form-control-lg" name="area" />
+                      <label class="form-label" for="form3Examplea3">Area</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-5 mb-4 pb-2">
+
+                      <div data-mdb-input-init class="form-outline form-white">
+                        <input type="text" id="form3Examplea4" class="form-control form-control-lg" name="city" value="Lusaka" readonly />
+                        <label class="form-label" for="form3Examplea4">Town</label>
+                      </div>
+
+                    </div>
+                    <div class="col-md-7 mb-4 pb-2">
+
+                      <div data-mdb-input-init class="form-outline form-white">
+                        <input type="text" id="form3Examplea5" class="form-control form-control-lg" name="province" value="Lusaka" readonly />
+                        <label class="form-label" for="form3Examplea5">Province</label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div data-mdb-input-init class="form-outline form-white">
+                      <input type="text" id="form3Examplea6" class="form-control form-control-lg" value="Zambia" readonly />
+                      <label class="form-label" for="form3Examplea6">Country</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-5 mb-4 pb-2">
+
+                      <div data-mdb-input-init class="form-outline form-white">
+                        <input type="text" id="form3Examplea7" class="form-control form-control-lg" value="+260" readonly/>
+                        <label class="form-label" for="form3Examplea7">Code +</label>
+                      </div>
+
+                    </div>
+                    <div class="col-md-7 mb-4 pb-2">
+
+                      <div data-mdb-input-init class="form-outline form-white">
+                        <input type="text" id="form3Examplea8" class="form-control form-control-lg" name="phone" required />
+                        <label class="form-label" for="form3Examplea8">Phone Number</label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <div data-mdb-input-init class="form-outline form-white">
+                      <input type="text" id="form3Examplea9" class="form-control form-control-lg" name="email" required />
+                      <label class="form-label" for="form3Examplea9">Your Email</label>
+                    </div>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                    <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" required />
+                    <label class="form-check-label text-white" for="form2Example3">
+                      I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
+                      site.
+                    </label>
+                  </div>
+
+                  <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg"
+                    data-mdb-ripple-color="dark">Register</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+</form>
+    </div>
+  </div>
+</section>
