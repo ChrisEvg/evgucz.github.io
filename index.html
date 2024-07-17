@@ -123,13 +123,13 @@ border-bottom-right-radius: 15px;
 		  <div class="col-md-6">
                         <div class="formbold-mb-3">
                           <label for="dob" class="formbold-form-label"> Date of Confirmation </label>
-                          <input type="date" name="Confirmation Date" id="dob" class="formbold-form-input" required/>
+                          <input type="date" name="Confirmation Date" id="dob" class="formbold-form-input"/>
                         </div>
                     </div>
                   <div class="col-md-6 mb-4 pb-2">
                     <div data-mdb-input-init class="form-outline">
 			    <label class="form-label" for="form3Examplev3">Marital status</label>
-                    <select data-mdb-select-init class="form-control form-control-lg" id="form3Examplev3" name="Marital Status">
+                    <select data-mdb-select-init class="form-control form-control-lg" id="form3Examplev3" name="Marital Status" required >
                       <option value="Single">Single</option>
                       <option value="Married">Married</option>
                       <option value="Divorced">Divorced</option>
@@ -141,7 +141,7 @@ border-bottom-right-radius: 15px;
                 <div class="col-md-6 row">
                     <div data-mdb-input-init class="form-outline mb-3 mb-md-0">
 		      <label class="form-label" for="form3Examplev4">Group(s) belong to </label>
-                      <input type="text" id="form3Examplev4" class="form-control form-control-lg" name="Groups Membership" required />
+                      <input type="text" id="form3Examplev4" class="form-control form-control-lg" name="Groups Membership"/>
                     </div>
                 </div>
                     <div class="col-md-6 mb-4 pb-2">
@@ -287,11 +287,14 @@ border-bottom-right-radius: 15px;
 		  </div>
 		</div>
 	      </div>
+		    <p class="row">
                 <div class="mb-4"> 
+			<div class="col-md-6 mb-4 pb-2">
                   <input  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg"
                     data-mdb-ripple-color="dark" />
                 </div>
 	      </div>
+	    </p>
 		</div>
 	      </div>
 	    </div>
